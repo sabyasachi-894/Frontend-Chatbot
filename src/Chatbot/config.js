@@ -12,7 +12,7 @@ import FinalMessage from './components/FinalMessage'
 
 
 const config = {
-    botName: "AgeDrive Explorer",
+    botName: "Student Enrollment Chatbot",
     initialMessages: [createChatBotMessage(`Enter into Student Info System!`, {
         widget: "enrollBtn"
     })],
