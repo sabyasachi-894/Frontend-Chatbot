@@ -1,9 +1,6 @@
 import { createChatBotMessage } from 'react-chatbot-kit';
 import Avatar from './components/Avatar';
-import StartBtn from './components/StartBtn';
-import StartSlow from './components/StartSlow';
 import data from './data';
-import DipslayImage from './components/DipslayImage';
 
 import EnrollBtn from './components/EnrollBtn';
 import GotBtn from './components/GotBtn';
@@ -26,12 +23,6 @@ const config = {
             name: "",
             age: 0,
             date:"",
-            category: "",
-            product: {
-                name: "",
-                link: "",
-                imageUrl: ""
-            }
         }
     },
     widgets: [
@@ -50,19 +41,7 @@ const config = {
         {
             widgetName: "finalMessage",
             widgetFunc: (props) => <FinalMessage {...props} />,
-        },
-        {
-            widgetName: "startBtn",
-            widgetFunc: (props) => <StartBtn {...props} />,
-        },
-        {
-            widgetName: "startSlow",
-            widgetFunc: (props) => <StartSlow {...props} />,
-        },
-        {
-            widgetName: "finalImage",
-            widgetFunc: (props) => <DipslayImage {...props} />,
-        },
+        }
     ]
 };
 
